@@ -110,7 +110,7 @@ python src/dms/dms_pipeline.py
 
 ## 👩‍💻 Author
 
-**Your Name**
+**Akshara Soman**
 - LinkedIn: www.linkedin.com/in/akshara-soman
 - Email: somanakshara7@gmail.com
 
