@@ -62,7 +62,7 @@ driver-scene-monitoring/
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/driver-scene-monitoring.git
+git clone https://github.com/aksharasoman2001/driver-scene-monitoring.git
 cd driver-scene-monitoring
 ```
 
@@ -111,9 +111,9 @@ python src/dms/dms_pipeline.py
 ## 👩‍💻 Author
 
 **Your Name**
-- LinkedIn: your LinkedIn link
-- Email: your email
+- LinkedIn: www.linkedin.com/in/akshara-soman
+- Email: somanakshara7@gmail.com
 
 ---
 
-*🎯 Target: Automotive AI Engineer Role in Europe · Timeline: 12 Weeks*
+
