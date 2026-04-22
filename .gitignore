@@ -1,0 +1,41 @@
+# Model weights (too large for GitHub — use Releases)
+*.pt
+*.pth
+*.weights
+checkpoints/*.onnx
+checkpoints/*.onnx.data
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/
+datasets/
+*.zip
+*.tar.gz
+
+# Logs & outputs
+runs/
+wandb/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
