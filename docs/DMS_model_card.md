@@ -36,3 +36,13 @@ This model is the second stage of a two-stage DMS pipeline:
 2. **MobileNetV3-Small (this model)** → visual confirmation on eye crop
 
 ## ARM64 Deployment
+-Architecture           : aarch64 ✅
+-Average inference time : 1105.83 ms (QEMU overhead)
+-Estimated FPS          : 0.9 (QEMU — real hardware ~30-60 FPS)
+-Prediction             : EYE OPEN / EYE CLOSED
+
+## Limitations
+
+- Performance may degrade in very dark or overexposed environments
+- Glasses and occlusions may reduce accuracy
+- Eye crop quality depends on MediaPipe landmark accuracy
