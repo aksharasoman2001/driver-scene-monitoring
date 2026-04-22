@@ -2,7 +2,7 @@
  
 > End-to-end real-time automotive perception pipeline combining driver monitoring, lane detection, and object detection — optimized for edge deployment on embedded hardware.
 >
-> A portfolio project targeting **Embedded AI / Automotive AI Engineer** roles in Europe.
+> 
  
 ---
  
