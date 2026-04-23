@@ -8,7 +8,7 @@
  
 ## 🎬 Live Demo
  
-![Unified Pipeline Demo](results/demo_pipeline.gif)
+![Unified Pipeline Demo](results/unifiedpipeline_demo.gif)
  
 *All three models running together on a driving video — DMS alerts + lane detection + object detection — on an Intel i3 CPU (~2-3 FPS).*
  
