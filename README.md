@@ -38,8 +38,7 @@
 | Model Size (FP32) | 5.93 MB |
 | Model Size (ONNX) | 6.11 MB |
 | Parameters | 1,519,906 |
- 
-📊 Experiment tracking: [W&B Dashboard](https://wandb.ai/aksharasoman1966-esigelec/dms-eye-detection/runs/93rqa2h9)
+
  
 ---
  
@@ -223,12 +222,6 @@ driver-scene-monitoring/
 │   ├── run_dms.py                    ← DMS ARM64 inference script
 │   ├── run_lane.py                   ← Lane detection ARM64 inference script
 │   └── run_yolo.py                   ← YOLO ARM64 inference script
-├── notebooks/
-│   ├── 01_DMS_training.ipynb
-│   ├── 02_DMS_onnx_export.ipynb
-│   ├── 03_lane_training.ipynb
-│   ├── 04_lane_optimization.ipynb
-│   └── 05_yolo_training.ipynb
 ├── results/
 │   ├── demo.gif                      ← Unified pipeline demo
 │   └── metrics/                      ← Loss curves, confusion matrices
