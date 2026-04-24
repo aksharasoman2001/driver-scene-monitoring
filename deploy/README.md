@@ -43,4 +43,4 @@ Pi 5 hardware, inference would be significantly faster.
 - ✅ Correct input/output tensor shapes verified per model
 - ✅ End-to-end inference pipeline runs without errors on ARM Linux
 
-## Files
+
