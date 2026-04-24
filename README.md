@@ -115,7 +115,31 @@ All three models integrated and tested together:
 | Outputs | DMS alert + lane overlay + object bounding boxes |
  
 ---
- 
+ ## ⚡ OpenVINO Optimization — Intel CPU Deployment
+
+All models additionally converted to **OpenVINO IR format** (Intel's edge AI 
+toolkit) and benchmarked on Intel i3 CPU.
+
+### Benchmark Results
+
+**DMS Model (MobileNetV3-Small):**
+
+| Runtime | Inference Time | FPS | Speedup |
+|---------|---------------|-----|---------|
+| ONNX (Intel CPU) | 2.47 ms | 405 FPS | baseline |
+| **OpenVINO (Intel CPU)** | **1.49 ms** | **671 FPS** | **65% faster** ⚡ |
+
+**YOLO Model (YOLOv11-nano):**
+
+| Runtime | Inference Time | FPS | Speedup |
+|---------|---------------|-----|---------|
+| ONNX (Intel CPU) | 36.25 ms | 27.6 FPS | baseline |
+| **OpenVINO (Intel CPU)** | **28.55 ms** | **35.0 FPS** | **27% faster** ⚡ |
+
+YOLO achieves **real-time performance (35 FPS)** on a regular Intel i3 CPU 
+— no GPU required. Complete scripts, benchmarks, and proof screenshots are 
+available in the [`openvino_deploy/`](openvino_deploy/) folder.
+
 ## 🐳 Embedded Deployment — Docker ARM64 Simulation
  
 All three ONNX models were deployed and validated on a simulated **NVIDIA Jetson Nano / Raspberry Pi 5 ARM64** environment using Docker + QEMU — without physical embedded hardware.
