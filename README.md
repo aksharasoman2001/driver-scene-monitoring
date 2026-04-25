@@ -1,4 +1,4 @@
-# 🚗 Driver & Scene Monitoring System (DMS + ADAS)
+#  Driver & Scene Monitoring System (DMS + ADAS)
  
 > End-to-end real-time automotive perception pipeline combining driver monitoring, lane detection, and object detection — optimized for edge deployment on embedded hardware.
 >
@@ -6,7 +6,7 @@
  
 ---
  
-## 🎬 Live Demo
+##  Live Demo
  
 ![Unified Pipeline Demo](results/unifiedpipeline_demo.gif)
  
@@ -14,18 +14,18 @@
  
 ---
  
-## ✅ Project Status — Complete
+##  Project Status — Complete
  
 | Module | Model | Dataset | Status |
 |--------|-------|---------|--------|
-| 👁️ Driver Monitoring (DMS) | MobileNetV3-Small + MediaPipe | Kaggle Drowsiness | ✅ Trained · Optimized · Deployed |
-| 🛣️ Lane Detection | Ultra-Fast-Lane-Detection V1 (ResNet-18) | TuSimple | ✅ Trained · FP16 · ONNX · Deployed |
-| 🚙 Object Detection (ADAS) | YOLOv11-nano | BDD100K (10 classes) | ✅ Trained · ONNX · Deployed |
-| 🔗 Unified Pipeline | All 3 merged | Video + Webcam | ✅ Tested on CPU |
+| 👁️ Driver Monitoring (DMS) | MobileNetV3-Small + MediaPipe | Kaggle Drowsiness |  Trained · Optimized · Deployed |
+| 🛣️ Lane Detection | Ultra-Fast-Lane-Detection V1 (ResNet-18) | TuSimple |  Trained · FP16 · ONNX · Deployed |
+| 🚙 Object Detection (ADAS) | YOLOv11-nano | BDD100K (10 classes) | Trained · ONNX · Deployed |
+| 🔗 Unified Pipeline | All 3 merged | Video + Webcam |  Tested on CPU |
  
 ---
  
-## 🎯 Results Summary
+##  Results Summary
  
 ### Module 1 — Driver Monitoring System
  
@@ -59,7 +59,7 @@
 | Original checkpoint (weights + optimizer state) | 775.6 MB | — |
 | After removing optimizer state | 258.6 MB | 66.6% ↓ |
 | After FP16 conversion | **129.3 MB** | 83.3% ↓ |
-| ONNX export | ✅ Complete | — |
+| ONNX export |  Complete | — |
  
 ---
  
@@ -140,7 +140,7 @@ YOLO achieves **real-time performance (35 FPS)** on a regular Intel i3 CPU
 — no GPU required. Complete scripts, benchmarks, and proof screenshots are 
 available in the [`openvino_deploy/`](openvino_deploy/) folder.
 
-## 🐳 Embedded Deployment — Docker ARM64 Simulation
+##  Embedded Deployment — Docker ARM64 Simulation
  
 All three ONNX models were deployed and validated on a simulated **NVIDIA Jetson Nano / Raspberry Pi 5 ARM64** environment using Docker + QEMU — without physical embedded hardware.
  
@@ -163,18 +163,18 @@ docker run --platform linux/arm64 --rm \
  
 | Model | ONNX Size | Architecture Confirmed | Inference Time (QEMU) | Output |
 |-------|-----------|------------------------|----------------------|--------|
-| DMS — MobileNetV3-Small | 6.11 MB | `aarch64` ✅ | ~1105 ms | EYE OPEN / CLOSED |
-| Lane Detection — ResNet-18 | 258.5 MB | `aarch64` ✅ | ~168 s (single inference) | `(1, 101, 56, 4)` |
-| Object Detection — YOLOv11-nano | 10.6 MB | `aarch64` ✅ | Validated | `(1, N, 85)` detections |
+| DMS — MobileNetV3-Small | 6.11 MB | `aarch64`  | ~1105 ms | EYE OPEN / CLOSED |
+| Lane Detection — ResNet-18 | 258.5 MB | `aarch64`  | ~168 s (single inference) | `(1, 101, 56, 4)` |
+| Object Detection — YOLOv11-nano | 10.6 MB | `aarch64`  | Validated | `(1, N, 85)` detections |
  
 > **Note on QEMU inference times:** These times reflect QEMU instruction-translation overhead on an Intel i3 host — not real hardware performance. On an actual Jetson Nano with ARM64 silicon, the DMS model would run at ~30–60 FPS. The `aarch64` confirmation in the output is the deployment proof, not the QEMU-inflated latency.
  
 ### What Was Validated
  
-- ✅ All three ONNX models load successfully on ARM64
-- ✅ `aarch64` architecture confirmed in runtime output for each model
-- ✅ Correct input/output tensor shapes verified per model
-- ✅ End-to-end inference pipeline runs without errors on ARM Linux
+-  All three ONNX models load successfully on ARM64
+-  `aarch64` architecture confirmed in runtime output for each model
+-  Correct input/output tensor shapes verified per model
+-  End-to-end inference pipeline runs without errors on ARM Linux
 ### Deployment Simulation Scripts
  
 ```
@@ -191,7 +191,7 @@ deploy/
  
 ---
  
-## 🧠 Architecture Overview
+##  Architecture Overview
  
 ### Module 1 — DMS (Two-stage pipeline)
  
@@ -259,7 +259,7 @@ driver-scene-monitoring/
  
 ---
  
-## 🚀 How To Run
+##  How To Run
  
 **1. Clone the repo**
 ```bash
@@ -295,7 +295,7 @@ docker run --platform linux/arm64 --rm \
  
 ---
  
-## 🛠️ Tech Stack
+##  Tech Stack
  
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)
@@ -313,22 +313,22 @@ docker run --platform linux/arm64 --rm \
  
 ---
  
-## 🔗 Related Project
+##  Related Project
  
 > This project builds on my embedded AI research at CNRS:
 >
-> 📦 [Underwater Fish Detection — Embedded AI on Raspberry Pi 5](https://github.com/aksharasoman2001/underwater-fish-detection-embedded-ai)  
+>  [Underwater Fish Detection — Embedded AI on Raspberry Pi 5](https://github.com/aksharasoman2001/underwater-fish-detection-embedded-ai)  
 > Achieved mAP@0.5 = 0.98 · INT8 quantization · 3.26 FPS on CPU-only Raspberry Pi 5
  
 ---
  
-## 👩‍💻 Author
+##  Author
  
 **Akshara Soman** — M.Sc. Automotive Embedded Systems, ESIGELEC France
  
-- 🔗 LinkedIn: [linkedin.com/in/akshara-soman](https://www.linkedin.com/in/akshara-soman)
-- 📧 Email: somanakshara7@gmail.com
-- 💼 Open to: Embedded AI · Computer Vision · ADAS Engineer roles in Europe
+-  LinkedIn: [linkedin.com/in/akshara-soman](https://www.linkedin.com/in/akshara-soman)
+-  Email: somanakshara7@gmail.com
+-  Open to: Embedded AI · Computer Vision · ADAS Engineer roles in Europe
 ---
  
 ## 📜 License
